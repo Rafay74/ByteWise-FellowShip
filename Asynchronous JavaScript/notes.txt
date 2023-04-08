@@ -1,0 +1,33 @@
+What is a Synchronous System?
+In a synchronous system, tasks are completed one after another.
+
+Think of this as if you have just one hand to accomplish 10 tasks. So, you have to complete one task at a time.
+
+
+In this system, tasks are completed independently.
+Here, imagine that for 10 tasks, you have 10 hands. So, each hand can do each task independently and at the same time.
+
+
+Callback:
+    calling a function inside another function is called callback
+    for eg:
+        function one () {
+            console.log("step 1")
+        }
+
+        function two (){
+            console.log("Step 2)
+        }
+
+    As u can see we have two functions , which will run top to down
+    in order to form a relation btw these 2 function, we use callback with arguement
+
+    for eg:
+
+    function one(call_two) {
+        console.log("step 1 completed , pplease call step 2")
+
+        call_two()
+    }
+
+    one(two)
